@@ -6,6 +6,8 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import com.example.mylibrary.ConfigClass;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,6 +19,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+         new ConfigClass().copy(this);
+
+
         list = new ArrayList<>();
         for (int i = 0; i < list.size(); i++) {
             list.add("-------item:-------"+i);
@@ -31,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
 //设置添加或删除item时的动画，这里使用默认动画
         mRecyclerView.setItemAnimator(new DefaultItemAnimator());
 //设置适配器
+        mRecyclerView.setAdapter(mAdapter);
 
     }
 }

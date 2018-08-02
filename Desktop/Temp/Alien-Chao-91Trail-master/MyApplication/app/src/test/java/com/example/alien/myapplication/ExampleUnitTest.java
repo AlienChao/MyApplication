@@ -12,6 +12,8 @@ import static org.junit.Assert.*;
 public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() {
-        assertEquals(4, 2 + 2);
+        Integer e = 321;
+        Integer f = 321;
+        System.err.println(e==f);
     }
 }
