@@ -6,7 +6,8 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
-import com.example.mylibrary.ConfigClass;
+
+import com.example.mylibrary.ConfigInit;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,8 +20,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-         new ConfigClass().copy(this);
+        ConfigInit configInit =  new ConfigInit();
+        configInit.init(this);
 
 
         list = new ArrayList<>();
