@@ -1,0 +1,11 @@
+{
+    "DATE": "2019-12-09",
+    "IN_SYSTEM_WORK": "",
+    "JOBDAIRY_ID": "200106172449341001",
+    "LEAVE_SITUATION": "工作日",
+    "SITE_NAME": "副主任级",
+    "SITE_NO": "190227160832623001",
+    "STAFF_NAME": "李丹",
+    "STAFF_NO": "201906211545125712263575457",
+    "WEEK_NO": "星期一"
+}
