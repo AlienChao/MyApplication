@@ -28,6 +28,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation 'com.android.support:recyclerview-v7:27.0.2'
     // 这里加依赖
-    // implementation 'com.android:mylibrary:1.1.5'
+    // implementation 'com.android:mylibrary:1.1.5'  
+     // implementation 'com.android:mylibrary:latest.release'  
     implementation project(':mylibrary')
 }
